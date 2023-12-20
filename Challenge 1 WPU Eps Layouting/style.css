@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Reset  */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Poppins&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #ff99ff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color : #ff66ff ;
+    width: 860px;
+    margin: 10px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px rgb(73, 72, 72);
+}
+
+
+
+.container .header h1{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.container .header nav ul li{
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 15px;
+
+}
+
+.container .header nav ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+    transition: .4s;
+}
+
+.container .header nav ul li a:hover{
+    background-color: #ff99ff;
+    border-radius: 10px;
+}
+
+.container .hero__image{
+    margin-top: 20px;
+    height: 420px;
+    background-image: url(img/Yoasobi.jpg);
+    background-size: cover;
+    border-top: 5px solid #cc99ff;
+    border-bottom: 5px solid #cc99ff;
+    border-radius: 10px;
+}
+
+.about .text__about h2{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 8px 0;
+    text-decoration: underline;
+}
+
+.about .text__about p{
+    text-align: justify;
+    text-indent: 24px;
+}
+
+.lyrics {
+    display: flex;
+}
+
+.lyrics .lyrics__text{
+    width: 540px;
+}
+.lyrics .lyrics__text h3{
+    margin: 15px 0;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.lyrics .lyrics__text h4{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.lyrics .artist{
+    align-content: center
+}
+
+.lyrics .artist img {
+    width: 150px;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 3px solid #ff99ff;
+}
+
+.lyrics .artist h5{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.lyrics .artist p{
+    text-align: center;
+}
+
+.footer{
+    background-color: #cc80ff;
+    width: 860px;
+    margin: 10px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 14px;
+}
