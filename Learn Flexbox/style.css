@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Reset  */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Style Navigation bar */
+
+nav{
+    background-color: rgb(255, 142, 129);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+nav .logo h2{
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgb(104, 104, 104);
+    letter-spacing: 1.5px;
+}
+
+
+nav ul{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(104, 104, 104);
+    transition: .3s;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 198, 192);
+}
+
+/* Menu humberger */
+.menu-togle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-togle input{
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity:   0;
+    left: -10px;
+    top: -6px;
+    z-index: 2;
+}
+
+.menu-togle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+/* Animasi */
+.menu-togle span:nth-child(2){
+    transform-origin: 0 0 ;
+}
+
+.menu-togle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-togle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-togle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-togle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+}
+
+/* Responsive breakpoint Tablet*/
+@media screen and (max-width: 768px) {
+    nav ul{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .menu-togle{
+        display: flex;
+    }
+
+    nav ul{
+        width: 50%;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-evenly;
+        right: 0;
+        flex-direction: column;
+        background-color: rgb(255, 142, 129);
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all .5s;
+    }
+
+    nav ul.slide{
+        transform: translateX(0);
+    }
+}
