@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2>Dian Kartiko</h2>
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Gallery</a></li>
+        </ul>
+
+        <div class="menu-togle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header>
+        <div class="hero">
+            <h2 class="heading">Spy X Family</h2>
+            <p class="sub-heading">Let's Play Movie</p>
+        </div>
+        <div class="feature feature-1">
+            <h4 class="comment">Favorite Character</h4>
+            <p class="character">Yuri</p>
+        </div>
+        <div class="feature feature-2">
+            <h4 class="comment">Favorite Character</h4>
+            <p class="character">Tomonari</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="services">
+            <div class="service">
+                <div class="icon"></div>
+                <h3>Anime</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, officiis.</p>
+            </div>
+            <div class="service">
+                <div class="icon"></div>
+                <h3>Movie</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, officiis.</p>
+            </div>
+            <div class="service">
+                <div class="icon"></div>
+                <h3>Life Action</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, officiis.</p>
+            </div>
+            <div class="service">
+                <div class="icon"></div>
+                <h3>Cartooon</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, officiis.</p>
+            </div>
+            <div class="service">
+                <div class="icon"></div>
+                <h3>Subscribe</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, officiis.</p>
+            </div>
+        </div>
+    </section>
+
+    </section>
+    <script>
+        const toogle = document.querySelector('.menu-togle input')
+        const nav = document.querySelector('nav ul')
+
+        toogle.addEventListener('click', ()=> {
+            nav.classList.toggle('slide');
+        })
+    </script>
+</body>
+</html>
