@@ -1,0 +1,171 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Font Google  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 12px 0;
+}
+
+nav .logo{
+	font-weight: 700;
+	font-size: 1.5em;
+	cursor: pointer;
+	text-shadow: 1px 1px 1px rgb(59, 59, 59);
+}
+
+.navigation ul{
+	display: flex;
+	align-items: center;
+}
+
+.navigation ul li a{
+	padding: 0 15px;
+	text-decoration: none;
+	color: rgba(0,0,0, 0.6);
+	font-size: 0.9rem;
+	font-weight: 600;
+	transition: .3s;
+}
+
+.navigation ul li a:hover{
+	color: black;
+}
+
+
+.sign button{
+	cursor: pointer;
+	background-color: rgb(43, 42, 42);
+	color: white;
+	text-align: center;
+	padding: 8px;
+	border-radius: 10px;
+	font-weight: 600;
+	border: none;
+}
+
+.sign button:hover{
+	background-color: rgb(61, 61, 61);
+}
+
+
+header{
+	display: flex;
+	align-items: center;
+	padding: 50px 20px;
+}
+
+header .content{
+	margin-right: 7px;
+	flex: 1;
+	box-sizing: border-box;
+}
+
+header .content h2{
+	text-shadow: 1px 1px 1px rgba(0,0,0, 0.6);
+	line-height: 1.2em;
+	font-size: 3.2rem;
+	font-weight: bold;
+}
+
+header .content p{
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: rgba(0,0,0, 0.6);
+	line-height: 1em;
+	text-align: justify;
+}
+
+header .linking ul{
+	display: flex;
+	margin-top: 50px;
+}
+
+header .linking ul li a{
+	text-decoration: none;
+	border-radius: 10px;
+	color: white;
+	text-shadow: 1px 1px 1px rgba(0,0,0, 0.6);
+}
+
+header .linking ul li:nth-child(1){
+	margin-right: 10px;
+	background-color: rgb(136, 78, 190);
+	padding: 15px 20px;
+	cursor: pointer;
+	border-radius: 15px;
+	transition: .3s;
+}
+
+header .linking ul li:nth-child(1):hover{
+	background-color: rgb(129, 65, 189);
+}
+
+header .linking ul li:nth-child(2){
+	background-color: rgb(43, 42, 42);
+	padding: 15px 20px;
+	border-radius: 15px;
+	transition: .3s;
+	cursor: pointer;
+}
+
+header .linking ul li:nth-child(2):hover{
+	background-color: rgb(61, 61, 61) ;
+}
+
+.image img{
+	flex: 2;
+	width: 50vmax;
+	border-radius: 15px;
+	border: 1px solid black;
+}
